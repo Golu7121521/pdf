@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FFE53935</item>
+        <item name="colorPrimaryVariant">#FFC62828</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FF37474F</item>
+        <item name="colorSecondaryVariant">#FF263238</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">?android:attr/colorBackground</item>
+    </style>
+</resources>

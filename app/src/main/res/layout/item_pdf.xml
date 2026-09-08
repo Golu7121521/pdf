@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Thumbnail Container with Rounded Corners -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#F5F5F5"
+        android:layout_marginEnd="14dp">
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pdf"
+            android:contentDescription="PDF Thumbnail" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Metadata Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="normal"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Sample Document.pdf" />
+
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:text="2.5 MB  |  12 Jul 2026" />
+    </LinearLayout>
+
+    <!-- Touch Target of 48dp for Three Dots Options Menu -->
+    <ImageView
+        android:id="@+id/btn_options"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:background="?attr/actionBarItemBackground"
+        android:src="@drawable/ic_more"
+        android:tint="?android:attr/textColorSecondary"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="More Options" />
+
+</LinearLayout>

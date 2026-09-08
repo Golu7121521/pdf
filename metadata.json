@@ -1,0 +1,6 @@
+{
+  "name": "PDFs",
+  "description": "An offline PDF reader with edge-to-edge layout, storage scan, search, favorites, recents, pinch-to-zoom, and selectable text selection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
